@@ -10,6 +10,7 @@
 
 </head>
 <body>
+<a href="AbirCrearUsuarioCtrl">Nuevo </a>
 			<section>
 				<table>
 				<tr>
@@ -30,8 +31,8 @@
 					<td><%=u.getUsuLogin() %></td>
 					<td><%=u.getUsuCorreo() %></td>
 					<td><%=u.getUsuNivel() %></td>
-					<td><a href="TraerUsuarioCtrl?id=<%=u.getIdUsuario()%>">Actualizar</a></td>
-					<td>Eliminar</td>
+					<td><a href="UsuarioModificacionCtrl?id=<%= u.getIdUsuario()%>">Actualizar</a></td>
+					<td><a href="EliminarUsuarioCtrl?id=<%=u.getIdUsuario()%>">Eliminar<a></td>
 					
 					</tr>
 					<%

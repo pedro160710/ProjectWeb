@@ -2,6 +2,7 @@ package controlador;
 
 import java.io.IOException;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -14,7 +15,7 @@ import servicios.ServicioUsuario;
 /**
  * Servlet implementation class GuardarCambiosUsuario
  */
-@WebServlet("/interfaces/GuardarCambiosUsuario")
+@WebServlet("/GuardarCambiosUsuario")
 public class GuardarCambiosUsuario extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -42,6 +43,11 @@ public class GuardarCambiosUsuario extends HttpServlet {
 		usuario.setUsuNivel(Integer.parseInt(nivel));
 		ServicioUsuario servicioUsuario = new ServicioUsuario();
 		servicioUsuario.modificar(usuario);
+		RequestDispatcher rd = request.getServletContext()
+				.getRequestDispatcher("/index.jsp");
+		rd.forward(request, response);
+//		RequestDispatcher rd= request.getRequestDispatcher("PoblarUsuarioCtrl");
+//		rd.forward(request, response);
 	}
 
 }

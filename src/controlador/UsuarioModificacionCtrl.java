@@ -12,23 +12,29 @@ import javax.servlet.http.HttpServletResponse;
 import servicios.ServicioUsuario;
 import modelo.Usuario;
 
+
 /**
- * Servlet implementation class TraerUsuarioCtrl
+ * Servlet implementation class UsuarioModificacionCtrl
  */
-@WebServlet("/interfaces/TraerUsuarioCtrl")
-public class TraerUsuarioCtrl extends HttpServlet {
+@WebServlet("/UsuarioModificacionCtrl")
+public class UsuarioModificacionCtrl extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	/**
 	 * @see HttpServlet#HttpServlet()
 	 */
-	public TraerUsuarioCtrl() {
+	public UsuarioModificacionCtrl() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
+	 *      response)
+	 */
 	protected void doGet(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
+
 		String idUsuario = request.getParameter("id");
 		Usuario usuario = new Usuario();
 		ServicioUsuario servicioUsuario = new ServicioUsuario();
@@ -39,6 +45,15 @@ public class TraerUsuarioCtrl extends HttpServlet {
 				.getRequestDispatcher("/interfaces/editarUsuario.jsp");
 		rd.forward(request, response);
 
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
+	 *      response)
+	 */
+	protected void doPost(HttpServletRequest request,
+			HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
 	}
 
 }

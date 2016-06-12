@@ -45,10 +45,10 @@
 						</div>
 					</div>
 					<div class="form-group">
-						<label for="nombre_usuario_usuario" class="col-lg-2 control-label">login
+						<label for="login_usuario" class="col-lg-2 control-label">login
 							de usuario</label>
 						<div class="col-lg-10">
-							<input type="text" name="nombre_usuario_usuario"
+							<input type="text" name="login_usuario"
 								class="form-control" value="<%=usuario.getUsuLogin()%>">
 						</div>
 					</div>

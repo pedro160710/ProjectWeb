@@ -6,15 +6,15 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <meta charset="utf-8">
 <title>Insert title here</title>
-<%@include file="/commons/links.jsp" %>
+<%@include file="commons/links.jsp" %>
 </head>
 <body>
 	
 	
-	<% String tituloPagina="Crear Local"; %>
-	<%@include file="../commons/header.jsp"%>
+	<% String tituloPagina="Indice"; %>
+	<%-- <%@include file="../commons/header.jsp"%> --%>
 
-<%@include file="../commons/navbar.jsp" %>
+<%-- <%@include file="../commons/navbar.jsp" %> --%>
 
 <%@include file="../commons/sidebar.jsp" %>
 
@@ -23,10 +23,10 @@
 		Nombre: <input type="text" name="txtNombre" /> <input type="submit"
 			value="Crear" />
 	</form> -->
-
+<a href="/interfaces/CrearUsuario.jsp">Nuevo </a>
 
 </body>
 
-<%@include file="/commons/scripts.jsp" %>
+<%@include file="commons/scripts.jsp" %>
 
 </html>
