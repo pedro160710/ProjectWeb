@@ -15,7 +15,7 @@ import modelo.Usuario;
 /**
  * Servlet implementation class CrearClienteCtrl
  */
-@WebServlet("interfaces/CrearUsuarioCtrl")
+@WebServlet("/CrearUsuarioCtrl")
 public class CrearUsuarioCtrl extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 

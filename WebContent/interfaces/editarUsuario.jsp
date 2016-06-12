@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+
+<%@page import="modelo.Usuario"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -10,7 +12,7 @@
 <meta
 	content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
 	name="viewport">
-<%@include file="../commons/links.jsp" %>
+<%@include file="../commons/links.jsp"%>
 </head>
 
 <body class="hold-transition skin-blue sidebar-mini">
@@ -33,22 +35,21 @@
 			<section class="content"> <section class="content">
 			<fieldset>
 				<legend>Información personal</legend>
-
-				<form class="form-horizontal" role="form" data-toggle="validator">
+				<%Usuario usuario = (Usuario)request.getAttribute("USUARIO"); %>
+				<form method="post" action="GuardarCambiosUsuario?id=<%=usuario.getIdUsuario() %>" class="form-horizontal" role="form" data-toggle="validator">
 					<div class="form-group">
 						<label for="nombre_usuario" class="col-lg-2 control-label">Nombre</label>
 						<div class="col-lg-10">
-							<input type="text" name="nombre_usuario" id="nombre_usuario"
-								class="form-control" id="ejemplo_email_3" placeholder="Nombre">
+							<input type="text" name="nombre_usuario"
+								value="<%=usuario.getUsuNombre()%>">
 						</div>
 					</div>
 					<div class="form-group">
-						<label for="nombre_usuario_usuario" class="col-lg-2 control-label">Nombre
+						<label for="login_usuario" class="col-lg-2 control-label">login
 							de usuario</label>
 						<div class="col-lg-10">
-							<input type="text" name="nombre_usuario_usuario"
-								id="nombre_usuario_usuario" class="form-control"
-								id="ejemplo_email_3" placeholder="Nombre de usuario">
+							<input type="text" name="login_usuario"
+								class="form-control" value="<%=usuario.getUsuLogin()%>">
 						</div>
 					</div>
 					<div class="form-group">
@@ -56,7 +57,7 @@
 						<div class="col-lg-10">
 							<input type="password" name="password_usuario"
 								id="password_usuario" class="form-control"
-								placeholder="Password">
+								value="<%=usuario.getUsuPassword()%>">
 						</div>
 					</div>
 
@@ -65,7 +66,7 @@
 						<div class="col-lg-10">
 							<input type="email" name="correo_usuario" id="correo_usuario"
 								class="form-control" id="ejemplo_email_3" placeholder="Correo"
-								data-error="Correo invalido">
+								value="<%=usuario.getUsuCorreo()%>">
 
 						</div>
 					</div>
@@ -73,8 +74,8 @@
 					<div class="form-group">
 						<label for="nivel_usuario" class="col-lg-2 control-label">Nivel</label>
 						<div class="col-lg-10">
-							<select class="form-control" name="nivel_usuario"
-								id="nivel-usuario">
+							<select class="form-control" name="nivel_usuario" value="<%=usuario.getUsuNivel()%>"
+								 id="nivel-usuario">
 								<option>1</option>
 								<option>2</option>
 								<option>3</option>
@@ -97,7 +98,7 @@
 
 					<div class="form-group">
 						<div class="col-lg-offset-2 col-lg-10">
-							<button type="submit" class="btn btn-success">Guardar</button>
+							<button type="submit" class="btn btn-success">Guardar cambios</button>
 						</div>
 					</div>
 					<div class="form-group">
@@ -109,7 +110,7 @@
 			</section> <!-- /.content --> </section>
 			<!-- /.content -->
 		</div>
-		
-<%@include file="../commons/scripts.jsp" %>
+
+		<%@include file="../commons/scripts.jsp"%>
 </body>
 </html>
