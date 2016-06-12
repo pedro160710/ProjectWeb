@@ -6,13 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <meta charset="utf-8">
 <title>Insert title here</title>
-<link rel="stylesheet" href="resources/bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet"
-	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
-<link rel="stylesheet"
-	href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-<link rel="stylesheet" href="resources/dist/css/AdminLTE.min.css">
-<link rel="stylesheet" href="resources/dist/css/skins/skin-blue.min.css">
+<%@include file="/commons/links.jsp" %>
 </head>
 <body>
 	
@@ -33,13 +27,6 @@
 
 </body>
 
-
-
-<!-- jQuery 2.2.0 -->
-<script src="resources/plugins/jQuery/jQuery-2.2.0.min.js"></script>
-<!-- Bootstrap 3.3.6 -->
-<script src="resources/bootstrap/js/bootstrap.min.js"></script>
-<!-- AdminLTE App -->
-<script src="resources/dist/js/app.min.js"></script>
+<%@include file="/commons/scripts.jsp" %>
 
 </html>

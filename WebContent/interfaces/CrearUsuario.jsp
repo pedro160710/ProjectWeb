@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+
+
 <!DOCTYPE html>
 
 <html>
@@ -13,10 +15,10 @@
 <body class="hold-transition skin-blue sidebar-mini">
 	<div class="wrapper">
 		<!-- Content Wrapper. Contains page content -->
-		
+
 
 		<div class="content-wrapper">
-		
+
 			<!-- Content Header (Page header) -->
 			<section class="content-header">
 				<h1>
@@ -84,7 +86,7 @@
 								</select>
 							</div>
 						</div>
-				<!-- 		<div class="form-group">
+						<!-- 		<div class="form-group">
 							<label for="foto-usuario" class="col-lg-2 control-label">Seleccione
 								un archivo</label>
 							<div class="col-lg-10">
@@ -105,6 +107,7 @@
 						</div>
 					</form>
 			</section>
+
 			<!-- /.content -->
 		</div>
 
