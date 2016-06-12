@@ -31,7 +31,7 @@ public class ServicioUsuario {
 	}
 
 	public void crear(Usuario usuario) {
-		System.out.println("Entro a Servcio usuario y paso la creacion de la persistencia");
+		
 		try {
 			//el errorr esta dentro 
 			em = HelperPersistencia.getEMF();
@@ -39,6 +39,7 @@ public class ServicioUsuario {
 			em.getTransaction().begin();
 			em.persist(usuario);
 			em.getTransaction().commit();
+			System.out.println("usuario creado");
 		} catch (Exception e) {
 			System.out.println("Error en insertar Usuario");
 		} finally {

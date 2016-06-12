@@ -84,14 +84,14 @@
 								</select>
 							</div>
 						</div>
-						<div class="form-group">
+				<!-- 		<div class="form-group">
 							<label for="foto-usuario" class="col-lg-2 control-label">Seleccione
 								un archivo</label>
 							<div class="col-lg-10">
 								<input name="foto_usuario" id=" input-1a foto_usuario"
 									type="file" class="file form-control" data-show-preview="false">
 							</div>
-						</div>
+						</div> -->
 
 						<div class="form-group">
 							<div class="col-lg-offset-2 col-lg-10">
