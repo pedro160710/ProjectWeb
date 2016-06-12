@@ -1,6 +1,20 @@
-<div>
+<!DOCTYPE html>
 
-<div class="wrapper">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>AEIS Grocery Manager</title>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="dist/css/skins/skin-blue.min.css">
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+  <div class="wrapper">
 
     <header class="main-header">
 
@@ -66,8 +80,8 @@
           <li class="treeview">
             <a href="#"><i class="ion-person-stalker"></i> <span>Usuario</span> <i class="fa fa-angle-left pull-right"></i></a>
             <ul class="treeview-menu">
-              <li><a href="interfaces/CrearUsuario.jsp">Crear</a></li>
-              <li><a href="/interfaces/EditarUsuario.jsp">Editar</a></li>
+              <li><a href="CrearUsuario.html">Crear</a></li>
+              <li><a href="EditarUsuario.html">Editar</a></li>
             </ul>
           </li>
           <li class="treeview">
@@ -117,8 +131,8 @@
       <!-- Content Header (Page header) -->
       <section class="content-header">
         <h1>
-          Page Header
-          <small>Optional description</small>
+         Editar Usuario
+          <!-- <small>Optional description</small> -->
         </h1>
 
       </section>
@@ -126,7 +140,78 @@
       <!-- Main content -->
       <section class="content">
 
-        <H1>contenido</H1>
+          <section class="content">
+              <fieldset>
+                <legend>Información personal</legend>
+                
+                <form class="form-horizontal" role="form" data-toggle="validator" >                
+                  <div class="form-group">
+                    <label for="nombre_usuario" class="col-lg-2 control-label">Nombre</label>
+                    <div class="col-lg-10">
+                      <input type="text" name="nombre_usuario" id="nombre_usuario" class="form-control" id="ejemplo_email_3"
+                      placeholder="Nombre">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="nombre_usuario_usuario" class="col-lg-2 control-label">Nombre de usuario</label>
+                    <div class="col-lg-10">
+                      <input type="text" name="nombre_usuario_usuario" id="nombre_usuario_usuario" class="form-control" id="ejemplo_email_3"
+                      placeholder="Nombre de usuario">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="password_usuario" class="col-lg-2 control-label">Password</label>
+                    <div class="col-lg-10">
+                      <input type="password" name="password_usuario" id="password_usuario" class="form-control"
+                      placeholder="Password">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="correo_usuario" class="col-lg-2 control-label">Correo</label>
+                    <div class="col-lg-10">
+                      <input type="email"  name="correo_usuario" id="correo_usuario" class="form-control" id="ejemplo_email_3" placeholder="Correo" data-error="Correo invalido" >
+                     
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="nivel_usuario" class="col-lg-2 control-label">Nivel</label>
+                    <div class="col-lg-10">
+                      <select class="form-control" name="nivel_usuario" id="nivel-usuario">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="foto-usuario" class="col-lg-2 control-label">Seleccione un archivo</label>
+                    <div class="col-lg-10">
+                      <input  name="foto_usuario" id=" input-1a foto_usuario" type="file" class="file form-control" data-show-preview="false">
+                    </div>                    
+                  </div>
+
+                  <div class="form-group">
+                    <div class="col-lg-offset-2 col-lg-10">
+                      <button type="submit" class="btn btn-success">Guardar</button>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-lg-offset-2 col-lg-10">
+                      <button type="submit" class="btn btn-default">Cancelar</button>
+                    </div>
+                  </div>
+                </form>
+
+
+              </section>
+              <!-- /.content -->
 
       </section>
       <!-- /.content -->
@@ -149,5 +234,17 @@
 
   <!-- REQUIRED JS SCRIPTS -->
 
+  <!-- jQuery 2.2.0 -->
+  <script src="plugins/jQuery/jQuery-2.2.0.min.js"></script>
+  <!-- Bootstrap 3.3.6 -->
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="bootstrap/js-helpers/bootstrap-formhelpers-phone.js"></script>
+  <!-- AdminLTE App -->
+  <script src="dist/js/app.min.js"></script>
 
-</div>
+  <!-- Optionally, you can add Slimscroll and FastClick plugins.
+       Both of these plugins are recommended to enhance the
+       user experience. Slimscroll is required when using the
+       fixed layout. -->
+</body>
+</html>

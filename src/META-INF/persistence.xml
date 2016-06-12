@@ -10,6 +10,7 @@
 		<class>modelo.Factura</class>
 		<class>modelo.Producto</class>
 		<class>modelo.Usuario</class>
+		
 
 		<properties>
 			<property name="hibernate.dialect" value="org.hibernate.dialect.DerbyDialect" />

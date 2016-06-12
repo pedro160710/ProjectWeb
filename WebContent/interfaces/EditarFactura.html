@@ -1,6 +1,20 @@
-<div>
+<!DOCTYPE html>
 
-<div class="wrapper">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>AEIS Grocery Manager</title>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="dist/css/skins/skin-blue.min.css">
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+  <div class="wrapper">
 
     <header class="main-header">
 
@@ -66,8 +80,8 @@
           <li class="treeview">
             <a href="#"><i class="ion-person-stalker"></i> <span>Usuario</span> <i class="fa fa-angle-left pull-right"></i></a>
             <ul class="treeview-menu">
-              <li><a href="interfaces/CrearUsuario.jsp">Crear</a></li>
-              <li><a href="/interfaces/EditarUsuario.jsp">Editar</a></li>
+              <li><a href="CrearUsuario.html">Crear</a></li>
+              <li><a href="EditarUsuario.html">Editar</a></li>
             </ul>
           </li>
           <li class="treeview">
@@ -117,18 +131,111 @@
       <!-- Content Header (Page header) -->
       <section class="content-header">
         <h1>
-          Page Header
-          <small>Optional description</small>
+          Editar factura
         </h1>
 
       </section>
 
       <!-- Main content -->
-      <section class="content">
+      <section class="invoice">
+      <!-- title row -->
+      <div class="row">
+        <div class="col-xs-12">
+          <h2 class="page-header">
+            <i class="fa fa-globe"></i> Factura #007612
+          </h2>
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- info row -->
+      <div class="row invoice-info">
+        
+        <!-- /.col -->
+        <div class="col-sm-4 invoice-col">
+          <br>
+          <b>Cliente:</b> Nombre de cliente<br>
+          <b>Fecha:</b> 2/22/2014<br>
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
 
-        <H1>contenido</H1>
+      <!-- Table row -->
+      <div class="row">
+        <div class="col-xs-12 table-responsive">
+          <table class="table table-striped">
+            <thead>
+            <tr>
+              <th>Cantidad</th>
+              <th>Producto</th>
+              <th>Codigo #</th>
+              <th>Subtotal</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>1</td>
+              <td>Call of Duty</td>
+              <td>455-981-221</td>
+              <td>$64.50</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Need for Speed IV</td>
+              <td>247-925-726</td>
+              <td>$50.00</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Monsters DVD</td>
+              <td>735-845-642</td>
+              <td>$10.70</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Grown Ups Blue Ray</td>
+              <td>422-568-642</td>
+              <td>$25.99</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
 
-      </section>
+      <div class="row">
+        <!-- /.col -->
+        <div class="col-xs-6">
+          <div class="table-responsive">
+            <table class="table">
+              <tr>
+                <th style="width:50%">Subtotal:</th>
+                <td>$250.30</td>
+              </tr>
+              <tr>
+                <th>IVA (12%)</th>
+                <td>$10.34</td>
+              </tr>
+              <tr>
+                <th>Total:</th>
+                <td>$265.24</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+
+      <!-- this row will not appear when printing -->
+      <div class="row no-print">
+        <div class="col-xs-12">
+          <button type="button" class="btn btn-success"><i class="fa fa-credit-card"></i> Editar Factura
+          </button>
+        </div>
+      </div>
+    </section>
       <!-- /.content -->
     </div>
     <!-- /.content-wrapper -->
@@ -149,5 +256,16 @@
 
   <!-- REQUIRED JS SCRIPTS -->
 
+  <!-- jQuery 2.2.0 -->
+  <script src="plugins/jQuery/jQuery-2.2.0.min.js"></script>
+  <!-- Bootstrap 3.3.6 -->
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="dist/js/app.min.js"></script>
 
-</div>
+  <!-- Optionally, you can add Slimscroll and FastClick plugins.
+       Both of these plugins are recommended to enhance the
+       user experience. Slimscroll is required when using the
+       fixed layout. -->
+</body>
+</html>
