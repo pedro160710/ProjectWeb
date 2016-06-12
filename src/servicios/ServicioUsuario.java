@@ -31,12 +31,15 @@ public class ServicioUsuario {
 	}
 
 	public void crear(Usuario usuario) {
-
+		
 		try {
+			//el errorr esta dentro 
 			em = HelperPersistencia.getEMF();
+			//el errorr esta dentro 
 			em.getTransaction().begin();
 			em.persist(usuario);
 			em.getTransaction().commit();
+			System.out.println("usuario creado");
 		} catch (Exception e) {
 			System.out.println("Error en insertar Usuario");
 		} finally {

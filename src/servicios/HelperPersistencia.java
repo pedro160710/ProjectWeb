@@ -14,7 +14,10 @@ import javax.persistence.Persistence;
 public class HelperPersistencia {
 
     public static EntityManager getEMF() {
+    	System.out.println("entro al Helper persistencia");
         EntityManager emf = (EntityManager) Persistence.createEntityManagerFactory("JPAInventarioEpn").createEntityManager();
+        
+        System.out.println("salio del Helper persistencia");
         return emf;
     }
 }

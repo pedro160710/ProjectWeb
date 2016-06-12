@@ -1,7 +1,9 @@
 package modelo;
 
 import java.io.Serializable;
+
 import javax.persistence.*;
+
 import java.util.List;
 
 
@@ -46,6 +48,16 @@ public class Usuario implements Serializable {
 	
 
 	public Usuario() {
+	}
+
+	public Usuario(String usuCorreo, String usuLogin, int usuNivel,
+			String usuNombre, String usuPassword) {
+		super();
+		this.usuCorreo = usuCorreo;
+		this.usuLogin = usuLogin;
+		this.usuNivel = usuNivel;
+		this.usuNombre = usuNombre;
+		this.usuPassword = usuPassword;
 	}
 
 	public int getIdUsuario() {
