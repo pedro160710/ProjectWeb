@@ -15,19 +15,22 @@
 <link rel="stylesheet" href="resources/dist/css/skins/skin-blue.min.css">
 </head>
 <body>
+	
+	
 	<% String tituloPagina="Crear Local"; %>
 	<%@include file="../commons/header.jsp"%>
 
-	<mark> Resultado: <%= request.getAttribute("RESULTADO") %> </mark>
+<%@include file="../commons/navbar.jsp" %>
 
+<%@include file="../commons/sidebar.jsp" %>
+
+<!-- 
 	<form method="post" action="BuscarProveedorCtrl">
 		Nombre: <input type="text" name="txtNombre" /> <input type="submit"
 			value="Crear" />
-	</form>
+	</form> -->
 
 
-
-	<%@ include file="contenidoPrincipal.jsp"%>
 </body>
 
 
